@@ -1,17 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste com Imagens</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedido de Desculpas</title>
 </head>
 <body>
-    <h1>Testando carga e Imagens</h1>
-    <p>Abaixo você vai ver uma imagem que está na mesma pasta.</p>
-    <img src="logo-html.png" alt="Logo HTML5">
-    <p>Podemos também carregar imagens que estão em sub-pastas.</p>
-    <img src="imagens/logo-css.png" alt="Logo CSS3">
-    <p>Também podemos carregar imagens externas</p>
-    <img src="https://a.thumbs.redditmedia.com/zDOFJTXd6fmlD58VDGypiV94Leflz11woxmgbGY6p_4.png" alt="Logo JavaScript"> <!-- URL -->
+  <h1>Pedido de Desculpas</h1>
+  
+  <!-- desculpa por tudo, só quero pode dá certo com você te amo -->
+  <form action="enviar_pedido.php" method="POST">
+    <label for="nome">Seu nome:</label><br>
+    <input type="text" id="nome" name="nome" required><br>
+    
+    <label for="mensagem">Sua mensagem de desculpas:</label><br>
+    <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br>
+    
+    <button type="submit">Enviar Pedido de Desculpas</button>
+  </form>
+  
+  <!-- Link para a músihttps://youtu.be/NY5-UdFxMnA?si=AKjEtBAWCXpmJskRca "Deixa Eu Amar Você" -->
+  <p>Para tornar o seu pedido de desculpas ainda mais especial, você pode incluir a música <a href="https://link_da_sua_musica.mp3">Deixa Eu Amar Você</a>.</p>
 </body>
 </html>
